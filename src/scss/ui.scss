@@ -1,0 +1,174 @@
+//! ПАРАЛАКС
+.main-bg {
+	position: fixed;
+	top: -10%;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	background: url("@img/main-bg.jpg") center / cover no-repeat;
+}
+
+
+
+// // Глобальный фон
+// [data-bg] {
+// 	overflow: hidden;
+// 	position: relative;
+// }
+// [data-decor] {
+// 	&::before {
+// 		content: "";
+// 		background: url("@img/main-decor.svg") 0 0 / 100% no-repeat;
+// 		width: rem(145);
+// 		height: rem(145);
+// 		animation: rotate 30s infinite linear;
+// 	}
+// 	@keyframes rotate {
+// 		0% {
+// 			transform: rotate(0deg);
+// 		}
+// 		100% {
+// 			transform: rotate(360deg);
+// 		}
+// 	}
+// }
+// .bg-item {
+// 	content: "";
+// 	position: absolute;
+// 	top: -30%;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 160%;
+// 	background: url("@img/main-bg.jpg") center / cover no-repeat;
+// }
+// // Шапка блока
+// .block-header {
+// 	@extend %cuf;
+// 	display: grid;
+// 	gap: 8px;
+// 	justify-items: center;
+// 	text-transform: capitalize;
+// 	// .block-header__sub-title
+// 	&__sub-title {
+// 		color: $mainWhite;
+// 		@include adaptiveValue("font-size", 23, 23);
+// 		line-height: 130%;
+// 		letter-spacing: 0.04em;
+// 		display: grid;
+// 		gap: 8px;
+// 		justify-items: center;
+// 		&::after {
+// 			@extend %ic;
+// 			content: "\e905";
+// 			color: $mainYellow;
+// 			font-size: em(9, 23);
+// 		}
+// 	}
+// 	// .block-header__title
+// 	&__title {
+// 		font-weight: 600;
+// 		@include adaptiveValue("font-size", 64, 35);
+// 		line-height: 130%;
+// 		letter-spacing: 0.04em;
+// 		color: $mainYellow;
+// 	}
+// 	// .block-header_big
+// 	&_big {
+// 		.block-header__title {
+// 			@include adaptiveValue("font-size", 90, 40);
+// 		}
+// 	}
+// 	// .block-header_left
+// 	&_left {
+// 		justify-items: stretch;
+// 		.block-header__sub-title {
+// 			justify-items: stretch;
+// 		}
+// 	}
+// }
+
+
+
+//! Кнопка скролла и вверх
+.scroll {
+	@extend %cuf;
+	text-transform: uppercase;
+	font-weight: 700; // 700 = bold
+	letter-spacing: 0.04em;
+	line-height: 175%;
+	color: $mainYellow;
+	display: grid;
+	gap: 24px;
+	justify-items: center;
+
+	&::before {
+		content: "";
+		height: 61px;
+		width: 1px;
+		background: linear-gradient(to bottom, rgb(220, 202, 135) 24%, rgba(220, 202, 135, 0.43) 100%, rgba(220, 202, 135, 0.93) 100%);
+	}
+
+}
+
+.block-header {
+	font-weight: 700;
+	text-transform: capitalize;
+	text-align: center;
+	display: grid;
+	gap: rem(8);
+
+	// .block-header_big
+	&_big {}
+
+
+	// .block-header_left
+	&_left {}
+
+
+	// .block-header__sub-title
+	&__sub-title {
+		@extend %cuf;
+		letter-spacing: 0.04em;
+		line-height: 130%;
+		font-size: rem(23);
+		color: $mainWhite;
+
+
+		&::after {
+			padding-top: 8px;
+			@extend %ic;
+			content: "\e905";
+			display: block;
+			font-size: percent(90, 241);
+			color: $mainYellow;
+		}
+
+		.block-header_left & {
+			text-align: left;
+		}
+	}
+
+
+	// .block-header__title
+	&__title {
+		@extend %cuf;
+		letter-spacing: 0.04em;
+		line-height: 130%;
+		@include adaptiveValue("font-size", 64, 24);
+		color: $mainYellow;
+
+		.block-header_big & {
+			@include adaptiveValue("font-size", 90, 50, 1680, 991.98, 1);
+		}
+
+		.block-header_left & {
+			text-align: left;
+		}
+	}
+}
+
+[class*="__text"] {
+	font-weight: 400;
+	line-height: 175%;
+	letter-spacing: 0.04em;
+}

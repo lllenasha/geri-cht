@@ -1,0 +1,681 @@
+<!--! 1 - РАЗОБРАТЬСЯ СО СЛАЙДЕРОМ + БУЛЛЕТАМИ + ПАДДИНГОМ В .slide-main-slider  !!!!  ЕТИТЬ ТВОЮ МАХАЛАЙКУ  -->
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Restaurant Home"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+
+
+
+		<main class="mainpage">
+
+			<section data-fullscreen class="mainpage__slider main-slider">
+
+
+
+				<div class="main-slider__container main-slider__container_wide">
+					<div class="main-slider__container body-main-slider">
+
+						<div class="body-main-slider__swiper">
+							<!-- ! ТУТ ПЕРВЫЙ ЭЛЕМЕНТ СЛАЙДЕРА -->
+							<div class="body-main-slider__slide slide-main-slider">
+								<div class="slide-main-slider__content">
+									<div
+										class="slide-main-slider__header block-header block-header_big block-header_left">
+										<div class="block-header__sub-title">Chase the new Flavour</div>
+										<h2 class="block-header__title ">
+											The key to Fine dining
+										</h2>
+									</div>
+									<div class="slide-main-slider__text">
+										Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
+										morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
+										tellus
+									</div>
+									<a href="" class="slide-main-slider__button button">Explore Menu</a>
+								</div>
+
+								<div class="slide-main-slider__image-ibg">
+									<img src="@img/mainpage/main-slider/01.jpg" alt="Картинка-еды">
+								</div>
+							</div>
+							<!-- ! ТУТ ВТОРОЙ ЭЛЕМЕНТ СЛАЙДЕРА -->
+							<div class="body-main-slider__slide slide-main-slider">
+								<div class="slide-main-slider__content">
+									<div
+										class="slide-main-slider__header block-header block-header_big block-header_left">
+										<div class="block-header__sub-title">Chase the new Flavour</div>
+										<h2 class="block-header__title ">
+											The key to Fine dining to Fine
+										</h2>
+									</div>
+									<div class="slide-main-slider__text">
+										Sit tellus lobortis sed senectus vivamus molestie.
+									</div>
+									<a href="" class="slide-main-slider__button button">Explore Menu</a>
+								</div>
+
+								<div class="slide-main-slider__image-ibg">
+									<img src="@img/mainpage/main-slider/02.jpg" alt="Картинка-еды">
+								</div>
+							</div>
+							<!-- ! ТУТ ТРЕТИЙ ЭЛЕМЕНТ СЛАЙДЕРА -->
+							<div class="body-main-slider__slide slide-main-slider">
+								<div class="slide-main-slider__content">
+									<div
+										class="slide-main-slider__header block-header block-header_big block-header_left">
+										<div class="block-header__sub-title">Chase the new Flavour</div>
+										<h2 class="block-header__title ">
+											The key
+										</h2>
+									</div>
+									<div class="slide-main-slider__text">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sint molestiae
+										similique necessitatibus, commodi sequi saepe, velit aliquid mollitia modi eius
+										ipsam laboriosam non quis consectetur. Odit voluptatem fugit iure obcaecati
+										iusto laudantium adipisci quo similique recusandae modi quisquam incidunt
+										reprehenderit quis est repudiandae deserunt quae nam rerum, ut sunt praesentium
+										maiores sequi! Sapiente ex harum quasi.
+									</div>
+									<a href="" class="slide-main-slider__button button">Explore Menu</a>
+								</div>
+
+								<div class="slide-main-slider__image-ibg">
+									<img src="@img/mainpage/main-slider/03.jpg" alt="Картинка-еды">
+								</div>
+							</div>
+
+
+
+
+						</div>
+
+						<div class="body-main-slider__controll">тут буллеты</div> <!-- тут буллеты -->
+
+
+					</div>
+
+					<nav class="main-slider__menu menu-main-slider" data-da=".body-main-slider, 1477, 0">
+						<!-- <nav class="main-slider__menu menu-main-slider"> -->
+						<a href="" class="menu-main-slider__text menu-main-slider__text_current">#Gericht</a>
+						<a href="" class="menu-main-slider__text">#Bar</a>
+					</nav>
+
+					<a type="button" class="main-slider__scroll scroll" data-da=".body-main-slider, 1477" href="#2">
+						Scroll
+					</a>
+				</div>
+
+			</section>
+
+
+			<section class="mainpage__about about-section">
+				<div class="about-section__container">
+
+					<div class="about-section__content block-header">
+						<h3 class="about-section__title block-header__title">About Us</h3>
+						<div class="about-section__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices
+							vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.
+						</div>
+						<button class="about-section__button button">Know more</button>
+					</div>
+
+					<div class="about-section__knife">
+						<img src="@img/mainpage/about/knife.png" alt="Нож">
+					</div>
+
+					<div class="about-section__content block-header">
+						<h3 class="about-section__title block-header__title">Our History</h3>
+						<div class="about-section__text">
+							Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi
+							volutpat habitasse interdum mi aliquam In sed odio nec aliquet.
+						</div>
+						<button class="about-section__button button">Know more</button>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="book">
+				<div class="book__container">
+					<div class="book__body">
+						<div class="book__header block-header">
+							<div class="block-header__sub-title">Reservations</div>
+							<h2 class="block-header__title ">Book A Table</h2>
+						</div>
+						<form data-dev data-popup-massage="#formMessage" method="POST" action="#" action=""
+							class="book__form form-book">
+							<div class="form-book__items">
+								<div class="form-book__item">
+									<select name="form[]" id="" class="form">
+										<option value="1" selected>1 Person</option>
+										<option value="2">2 Person</option>
+										<option value="3">3 Person</option>
+										<option value="4">4 Person</option>
+										<option value="5">More 4 Person</option>
+									</select>
+								</div>
+								<div class="form-book__item">
+									<div class="form-book__input _icon-select-arrow">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+											data-required placeholder="06/10/2026" data-calendar class="input-dark">
+									</div>
+								</div>
+								<div class="form-book__item">
+									<select name="form[]" id="" class="form">
+										<option value="1" selected>11:00 AM</option>
+										<option value="2">12:00 AM</option>
+										<option value="3">1:00 PM</option>
+										<option value="4">2:00 PM</option>
+										<option value="5">3:00 PM</option>
+										<option value="6">4:00 PM</option>
+									</select>
+								</div>
+							</div>
+						</form>
+						<button class="book__button button">Book now</button>
+					</div>
+				</div>
+			</section>
+
+			<div class="menu-block">
+				<div class="menu-block__container menu-block__container_wide">
+					<ul class="menu-block__list">
+						<li class="menu-block__item"><a href="" class="menu-block__link">bar menu</a></li>
+						<li class="menu-block__item"><a href="" class="menu-block__link">Food Menu</a></li>
+						<li class="menu-block__item"><a href="" class="menu-block__link">Desserts Menu</a></li>
+					</ul>
+				</div>
+				<div class="menu-block__background">
+					<img src="@img/mainpage/menu-block/background.jpg" alt="Меню">
+				</div>
+			</div>
+
+			<section class="mainpage__menu-special special-menu">
+				<div class="special-menu__container">
+
+					<div class="special-menu__header block-header">
+						<div class="special-menu__sub-title block-header__sub-title">Menu that fits you palatte</div>
+						<div class="special-menu__title block-header__title">Today’s Special</div>
+					</div>
+
+					<div class="special-menu__body">
+						<div class="special-menu__table table-special">
+
+							<div class="table-special__title">Wine & Beer</div>
+
+							<div class="table-special__body">
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Chapel Hill Shiraz</div>
+										<div class="table-special__price">$56</div>
+									</div>
+									<div class="table-special__text">AU | Bottle</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Catena Malbec</div>
+										<div class="table-special__price">$59</div>
+									</div>
+									<div class="table-special__text">AU | Bottle</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">La Vieille Rosé</div>
+										<div class="table-special__price">$44</div>
+									</div>
+									<div class="table-special__text">FR | 750 ml</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Rhino Pale Ale</div>
+										<div class="table-special__price">$31</div>
+									</div>
+									<div class="table-special__text">CA | 750 ml</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Irish Guinness</div>
+										<div class="table-special__price">$26</div>
+									</div>
+									<div class="table-special__text">IE | 750 ml</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="special-menu__image">
+							<img src="@img/mainpage/special-menu/1.png" alt="Картинка для специального меню / Бар">
+						</div>
+
+						<div class="special-menu__table table-special">
+
+							<div class="table-special__title">Cocktails</div>
+
+							<div class="table-special__body">
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Aperol Spritz</div>
+										<div class="table-special__price">$20</div>
+									</div>
+									<div class="table-special__text">Aperol | Villa Marchesi prosecco | soda | 30ml
+									</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Dark 'N' Stormy</div>
+										<div class="table-special__price">$16</div>
+									</div>
+									<div class="table-special__text">Dark rum | Ginger beer | Slice of lime. </div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Daiquiri</div>
+										<div class="table-special__price">$10</div>
+									</div>
+									<div class="table-special__text">Rum | Citrus juice | Sugar</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Old Fashioned</div>
+										<div class="table-special__price">$31</div>
+									</div>
+									<div class="table-special__text">Bourbon | Brown sugar | Angostura Bitters</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__name">Negroni</div>
+										<div class="table-special__price">$26</div>
+									</div>
+									<div class="table-special__text">Gin | Sweet Vermouth | Campari | Orange garnish
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<button class="special-menu__button button">View More</button>
+
+				</div>
+			</section>
+
+
+			<section class="mainpage__chef-founder founder-chef">
+				<div class="founder-chef__container">
+					<div class="founder-chef__img-ibg">
+						<img src="@img/mainpage/founder-chef/chef.png" alt="Портрет шефа-основателя">
+					</div>
+					<div class="founder-chef__content">
+						<div class="founder-chef__header block-header" data-da=".founder-chef__container, 991.98, 0">
+							<div class="founder-chef__sub-title block-header__sub-title">Chef’s Word</div>
+							<div class="founder-chef__title block-header__title">What we believe in</div>
+						</div>
+						<div class="founder-chef__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit auctor sit iaculis in
+							arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque
+							scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer
+							curabitur semper sit nunc.
+						</div>
+						<div class="founder-chef__info">
+							<div class="founder-chef__name">Kevin Luo</div>
+							<div class="founder-chef__post">Chef & Founder</div>
+						</div>
+						<div class="founder-chef__autograph">
+							<img src="@img/mainpage/founder-chef/autograph.svg" alt="Автограф основателя">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="mainpage__custumers happy-custumers">
+				<div class="happy-custumers__container">
+
+					<div class="happy-custumers__header block-header">
+						<div class="happy-custumers__sub-title block-header__sub-title">Testimony</div>
+						<div class="happy-custumers__title block-header__title">Happy customers</div>
+					</div>
+
+					<div class="happy-custumers__content">
+
+						<div class="happy-custumers__item">
+							<div class="happy-custumers__img-ibg">
+								<img src="@img/mainpage/happy-custumers/1.png" alt="">
+							</div>
+							<div class="happy-custumers__body">
+								<div class="happy-custumers__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+								</div>
+								<div class="happy-custumers__name">Wade Warren</div>
+								<div class="happy-custumers__post">Sommelier</div>
+							</div>
+						</div>
+
+						<div class="happy-custumers__item">
+							<div class="happy-custumers__img-ibg">
+								<img src="@img/mainpage/happy-custumers/2.png" alt="">
+							</div>
+							<div class="happy-custumers__body">
+								<div class="happy-custumers__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+								</div>
+								<div class="happy-custumers__name">Jane Cooper</div>
+								<div class="happy-custumers__post">Chef</div>
+							</div>
+						</div>
+
+						<div class="happy-custumers__item">
+							<div class="happy-custumers__img-ibg">
+								<img src="@img/mainpage/happy-custumers/3.png" alt="">
+							</div>
+							<div class="happy-custumers__body">
+								<div class="happy-custumers__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+								</div>
+								<div class="happy-custumers__name">Robert Fox</div>
+								<div class="happy-custumers__post">Chef</div>
+							</div>
+						</div>
+
+						<div class="happy-custumers__item">
+							<div class="happy-custumers__img-ibg">
+								<img src="@img/mainpage/happy-custumers/4.png" alt="">
+							</div>
+							<div class="happy-custumers__body">
+								<div class="happy-custumers__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+								</div>
+								<div class="happy-custumers__name">Brooklyn Simmons</div>
+								<div class="happy-custumers__post">Caterer</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div data-watch="video" class="video-module">
+				<video id="video-module" class="video-module__item" data-full="files/main.mp4"
+					data-src="files/preview.mp4" muted></video>
+			</div>
+
+			<section class="mainpage__recognition recognition">
+				<div class="recognition__container">
+
+					<div class="recognition__content">
+						<div class="recognition__header block-header">
+							<div class="recognition__sub-title block-header__sub-title">Awards & recognition</div>
+							<h2 class="recognition__title block-header__title">Our Laurels</h2>
+						</div>
+
+						<div class="recognition__items">
+
+							<div class="recognition__item">
+								<div class="recognition__img">
+									<img src="@img/mainpage/recognition/01.svg" alt="">
+								</div>
+								<div class="recognition__body">
+									<div class="recognition__name">Bib Gourmond</div>
+									<div class="recognition__texto">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+
+							<div class="recognition__item">
+								<div class="recognition__img">
+									<img src="@img/mainpage/recognition/02.svg" alt="">
+								</div>
+								<div class="recognition__body">
+									<div class="recognition__name">Rising Star</div>
+									<div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+
+							<div class="recognition__item">
+								<div class="recognition__img">
+									<img src="@img/mainpage/recognition/03.svg" alt="">
+								</div>
+								<div class="recognition__body">
+									<div class="recognition__name">AA Hospitality</div>
+									<div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+
+							<div class="recognition__item">
+								<div class="recognition__img">
+									<img src="@img/mainpage/recognition/04.svg" alt="">
+								</div>
+								<div class="recognition__body">
+									<div class="recognition__name">Outstanding Chef</div>
+									<div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="recognition__img-ibg">
+						<img src="@img/mainpage/recognition/main-img.jpg" alt="">
+					</div>
+
+
+				</div>
+
+			</section>
+
+			<section class="mainpage__blogs blogs">
+				<div class="blogs__container" data-showmore="items">
+
+					<div class="blogs__header block-header">
+						<div class="blogs__sub-title block-header__sub-title">blogs</div>
+						<div class="blogs__title block-header__title">Gerícht updates</div>
+					</div>
+
+					<div data-showmore-content="3" class="blogs__content">
+
+						<div class="blogs__item item-blogs ">
+							<div class="item-blogs__img-ibg">
+								<img src="@img/mainpage/blogs/01.jpg" alt="">
+							</div>
+							<div class="item-blogs__body">
+								<div class="item-blogs__caption">
+									<div class="item-blogs__date">16 Apr 2021</div>
+									<div class="item-blogs__author">- Annalisa L</div>
+								</div>
+								<div class="item-blogs__title">tips for prepping and caring for your grill</div>
+								<div class="item-blogs__text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi accusantium neque,
+									tempore perspiciatis cum esse cupiditate non dolorum tenetur at, commodi architecto,
+									veniam saepe. Velit porro illo vel veniam esse commodi omnis doloremque consectetur
+									maiores fuga. Hic dignissimos voluptatibus quibusdam ipsum quam magnam repudiandae
+									doloremque, repellendus, similique nisi modi provident suscipit ad expedita
+									temporibus tempora quia. Velit pariatur assumenda nisi porro fugit minima impedit
+									quibusdam eveniet eos dolorum! Exercitationem maiores, consequatur facere officiis
+									alias eum quos. Reprehenderit deleniti officia debitis ratione excepturi adipisci
+									voluptatibus quam ad in explicabo. Inventore ad exercitationem maxime tempora, atque
+									distinctio saepe cupiditate ipsam est libero!
+								</div>
+								<div class="item-blogs__read-more">Read More</div>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__img-ibg">
+								<img src="@img/mainpage/blogs/02.jpg" alt="">
+							</div>
+							<div class="item-blogs__body">
+								<div class="item-blogs__caption">
+									<div class="item-blogs__date">23 May 2021</div>
+									<div class="item-blogs__author">- John Micheal</div>
+								</div>
+								<div class="item-blogs__title">summer cocktails and mocktails</div>
+								<div class="item-blogs__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum
+									turpis
+									elit
+									elit scelerisque egestas mus in.
+								</div>
+								<div class="item-blogs__read-more">Read More</div>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__img-ibg">
+								<img src="@img/mainpage/blogs/03.jpg" alt="">
+							</div>
+							<div class="item-blogs__body">
+								<div class="item-blogs__caption">
+									<div class="item-blogs__date">06 Aug 2021</div>
+									<div class="item-blogs__author">- Fred W</div>
+								</div>
+								<div class="item-blogs__title">easy cooking for college students</div>
+								<div class="item-blogs__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum
+									turpis
+									elit
+									elit scelerisque egestas mus in.
+								</div>
+								<div class="item-blogs__read-more">Read More</div>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__img-ibg">
+								<img src="@img/mainpage/blogs/01.jpg" alt="">
+							</div>
+							<div class="item-blogs__body">
+								<div class="item-blogs__caption">
+									<div class="item-blogs__date">16 Apr 2021</div>
+									<div class="item-blogs__author">- Annalisa L</div>
+								</div>
+								<div class="item-blogs__title">tips for prepping and caring for your grill</div>
+								<div class="item-blogs__text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi accusantium neque,
+									tempore perspiciatis cum esse cupiditate non dolorum tenetur at, commodi architecto,
+									veniam saepe. Velit porro illo vel veniam esse commodi omnis doloremque consectetur
+									maiores fuga. Hic dignissimos voluptatibus quibusdam ipsum quam magnam repudiandae
+									doloremque, repellendus, similique nisi modi provident suscipit ad expedita
+									temporibus tempora quia. Velit pariatur assumenda nisi porro fugit minima impedit
+									quibusdam eveniet eos dolorum! Exercitationem maiores, consequatur facere officiis
+									alias eum quos. Reprehenderit deleniti officia debitis ratione excepturi adipisci
+									voluptatibus quam ad in explicabo. Inventore ad exercitationem maxime tempora, atque
+									distinctio saepe cupiditate ipsam est libero!
+								</div>
+								<div class="item-blogs__read-more">Read More</div>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__img-ibg">
+								<img src="@img/mainpage/blogs/02.jpg" alt="">
+							</div>
+							<div class="item-blogs__body">
+								<div class="item-blogs__caption">
+									<div class="item-blogs__date">23 May 2021</div>
+									<div class="item-blogs__author">- John Micheal</div>
+								</div>
+								<div class="item-blogs__title">summer cocktails and mocktails</div>
+								<div class="item-blogs__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum
+									turpis
+									elit
+									elit scelerisque egestas mus in.
+								</div>
+								<div class="item-blogs__read-more">Read More</div>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__img-ibg">
+								<img src="@img/mainpage/blogs/03.jpg" alt="">
+							</div>
+							<div class="item-blogs__body">
+								<div class="item-blogs__caption">
+									<div class="item-blogs__date">06 Aug 2021</div>
+									<div class="item-blogs__author">- Fred W</div>
+								</div>
+								<div class="item-blogs__title">easy cooking for college students</div>
+								<div class="item-blogs__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum
+									turpis
+									elit
+									elit scelerisque egestas mus in.
+								</div>
+								<div class="item-blogs__read-more">Read More</div>
+							</div>
+						</div>
+
+					</div>
+
+					<button data-showmore-button class="blogs__button button">
+						<span>View More</span>
+						<span>Hide</span>
+					</button>
+
+
+				</div>
+
+			</section>
+
+			<section class="mainpage__gallery gallery">
+				<div class="gallery__container">
+
+					<div class="gallery__content">
+						<div class="gallery__header block-header">
+							<div class="gallery__sub-title block-header__sub-title">Instagram</div>
+							<h2 class="gallery__title block-header__title">Photo Gallery</h2>
+						</div>
+
+						<div class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+							mattis ipsum turpis elit elit scelerisque egestas mu.</div>
+						<a href="" class="gallery__button button" data-da=".gallery__container, 991.98">view more</a>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__slider">
+							<div data-gallery class="gallery__swiper">
+								<a href="@img/mainpage/gallery/01.jpg" class="gallery__slide-ibg">
+									<img class="swiper-lazy" data-src="@img/mainpage/gallery/01.jpg" alt="Картинка">
+								</a>
+								<a href="@img/mainpage/gallery/02.jpg" class="gallery__slide-ibg">
+									<img class="swiper-lazy" data-src="@img/mainpage/gallery/02.jpg" alt="Картинка">
+								</a>
+								<a href="@img/mainpage/gallery/03.jpg" class="gallery__slide-ibg">
+									<img class="swiper-lazy" data-src="@img/mainpage/gallery/03.jpg" alt="Картинка">
+								</a>
+								<a href="@img/mainpage/gallery/04.jpg" class="gallery__slide-ibg">
+									<img class="swiper-lazy" data-src="@img/mainpage/gallery/04.jpg" alt="Картинка">
+								</a>
+								<a href="@img/mainpage/gallery/05.jpg" class="gallery__slide-ibg">
+									<img class="swiper-lazy" data-src="@img/mainpage/gallery/05.jpg" alt="Картинка">
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+
+
+		</main>
+
+
+
+		@@include('html/_footer.htm',{})
+	</div>
+	<!-- @@include('html/_popup.htm',{}) -->
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

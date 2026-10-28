@@ -1,0 +1,137 @@
+.bar-home {
+
+    // .bar-home__slider
+    &__slider {}
+}
+
+.bar-slider {
+    @include adaptiveValue("padding-top", 125, 61, 1680, 500, 1);
+    @include adaptiveValue("padding-bottom", 139, 40, 1680, 500, 1);
+    display: flex;
+
+
+    // .bar-slider__container
+    &__container {
+
+        // .bar-slider__container_wide
+        &_wide {
+            flex: 1 1 auto;
+            position: relative;
+            min-width: 0;
+        }
+    }
+
+
+}
+
+.body-bar-slider {
+
+    // .body-bar-slider__swiper
+    &__swiper {
+        // flex: 1 1 auto;
+    }
+
+    // .body-bar-slider__slide
+    &__slide {
+        //! ВАЖНО! ВСЕ ЧТО НИЖЕ - НЕ УДАЛЯТЬ!!!! ЭТО ДЛЯ СКРОЛЛА!!!!
+
+        // opacity: 0 !important;
+        // pointer-events: none;
+
+        // &.swiper-slide-active {
+        //     opacity: 1 !important;
+        //     pointer-events: auto;
+        // }
+
+        //!
+
+        padding: rem(15) 0;
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+
+        &:has(.bar-slider__title:hover) .bar-slider__image-ibg {
+            // если внутри слайда на заголовок .bar-slider__title наведён курсор, увеличь картинку .bar-slider__image-ibg
+            transform: scale(1.03);
+        }
+    }
+
+    // .body-bar-slider__title
+    &__title {
+        position: absolute;
+        @extend %cuf;
+        color: $mainWhite;
+        @include adaptiveValue("font-size", 181, 150, 1300, 991, 1);
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        z-index: 1;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        text-transform: capitalize;
+        transition: transform 0.3s ease 0s;
+
+
+    }
+
+    // .body-bar-slider__image-ibg
+    &__image-ibg {
+        flex: 0 1 634px;
+        @include adaptiveValue("padding-bottom", 740, 800, 1680, 991.98, 1);
+        outline: 1px solid $mainYellow;
+        transition: transform 0.3s ease 0s;
+
+
+        // padding-bottom: percent(634, 840);
+
+        & img {
+            // max-height: 840px;
+        }
+    }
+
+    // .body-bar-slider__controll
+    &__controll {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 100%;
+        bottom: rem(56);
+        align-items: end;
+        right: rem(15);
+        writing-mode: vertical-lr;
+    }
+
+    // .body-bar-slider__nav
+    &__nav {}
+
+    // .body-bar-slider__items
+    &__items {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 100%;
+        top: rem(56);
+        left: rem(15);
+        align-items: start;
+    }
+
+    // .body-bar-slider__item
+    &__item {}
+
+    // .body-bar-slider__text
+    &__text {
+        color: $mainWhite;
+        writing-mode: vertical-lr;
+        rotate: (180deg);
+        transition: color 0.3s ease 0s;
+
+        // .body-bar-slider__text_current
+        &:hover {
+            color: $mainYellow;
+        }
+    }
+
+}

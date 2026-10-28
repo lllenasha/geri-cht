@@ -1,0 +1,121 @@
+//====================================================================================================
+
+.footer {
+    @include adaptiveValue("padding-top", 128, 40, 1680, 479.98, 1);
+    @include adaptiveValue("padding-bottom", 128, 40, 1680, 479.98, 1);
+    z-index: 2;
+
+    // .footer__container
+    &__container {
+        text-align: center;
+    }
+
+    // .footer__content
+    &__content {
+        @include adaptiveValue("padding-bottom", 64, 30, 1680, 441, 1);
+        position: relative;
+        display: grid;
+        gap: rem(64);
+
+
+        @media (min-width:767px) {
+            gap: 30px;
+            grid-template-columns: 23.54% 35.62% 23.54%;
+            justify-content: space-between;
+        }
+    }
+
+    // .footer__column
+    &__column {
+        text-align: center;
+        display: grid;
+        gap: rem(24);
+
+        &:nth-child(2) {
+            order: -1;
+
+            @media (min-width: 767px) {
+                order: 0;
+                margin-top: rem(-25);
+                gap: rem(32);
+            }
+
+        }
+    }
+
+    // .footer__title
+    &__title {
+        @extend %cuf;
+        font-weight: 400;
+        letter-spacing: 0.004em;
+        line-height: 130%;
+        @include adaptiveValue("font-size", 32, 20, 1680, 441, 1);
+        color: $mainWhite;
+
+        &_color-size {
+            font-weight: 700;
+            @include adaptiveValue("font-size", 64, 30, 1680, 441, 1);
+            color: $mainYellow;
+            text-transform: uppercase;
+        }
+    }
+
+    // .footer__body
+    &__body {
+        display: grid;
+        gap: rem(8);
+    }
+
+    // .footer__text
+    &__text {
+
+        // .footer__text_color-white
+        &_color-white {
+            color: $mainWhite;
+
+            &::after {
+                padding: 16px 0px 8px;
+                @extend %ic;
+                content: "\e905";
+                display: block;
+                font-size: percent(150, 241);
+                color: $mainYellow;
+            }
+        }
+
+
+    }
+
+
+    // .footer__icons
+    &__icons {
+
+        display: flex;
+        justify-content: center;
+        gap: rem(16);
+
+        &::before,
+        &::after,
+        & span::before {
+            @extend %ic;
+            display: block;
+            flex: 0 0 24px;
+            color: #F5EFDB;
+        }
+
+        &::before {
+            content: "\e900";
+        }
+
+        & span::before {
+            content: "\e902";
+        }
+
+        &::after {
+            content: "\e901";
+        }
+
+    }
+}
+
+//====================================================================================================

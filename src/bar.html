@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Bar Home"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+
+
+
+        <bar class="bar-home">
+
+
+            <section data-fullscreen class="bar-home__slider bar-slider">
+
+
+
+                <div class="bar-slider__container bar-slider__container_wide">
+                    <div class="bar-slider__container body-bar-slider">
+
+                        <div class="body-bar-slider__swiper">
+                            <!-- ! ТУТ ПЕРВЫЙ ЭЛЕМЕНТ СЛАЙДЕРА -->
+                            <div class="body-bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/main-slider/01.jpg" alt="Картинка-еды">
+                                </div>
+                            </div>
+                            <!-- ! ТУТ ВТОРОЙ ЭЛЕМЕНТ СЛАЙДЕРА -->
+                            <div class="body-bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/main-slider/02.jpg" alt="Картинка-еды">
+                                </div>
+                            </div>
+                            <!-- ! ТУТ ТРЕТИЙ ЭЛЕМЕНТ СЛАЙДЕРА -->
+                            <div class="body-bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/main-slider/03.jpg" alt="Картинка-еды">
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="body-bar-slider__controll">тут буллеты</div> <!-- тут буллеты -->
+
+
+                    </div>
+
+                    <nav class="bar-slider__menu menu-bar-slider" data-da=".body-bar-slider, 1477, 0">
+                        <!-- <nav class="bar-slider__menu menu-bar-slider"> -->
+                        <a href="" class="menu-bar-slider__text menu-bar-slider__text_current">#Gericht</a>
+                        <a href="" class="menu-bar-slider__text">#Bar</a>
+                    </nav>
+
+                    <a type="button" class="bar-slider__scroll scroll" data-da=".body-bar-slider, 1477" href="#2">
+                        Scroll
+                    </a>
+                </div>
+
+            </section>
+
+
+            <!-- <section data-fullscreen class="bar-home__slider bar-slider">
+                <div class="bar-slider__container bar-slider__container_wide">
+                    <div class="bar-slider__container bar-slider">
+
+                        <div class="bar-slider__swiper">
+                            <div class="bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/bar-slider/01.jpg" alt="Картинка-еды">
+                                </div>
+                            </div>
+                            <div class="bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/bar-slider/02.jpg" alt="Картинка-еды">
+                                </div>
+                            </div>
+                            <div class="bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/bar-slider/03.webp" alt="Картинка-еды">
+                                </div>
+                            </div>
+                            <div class="bar-slider__slide slide-bar-slider">
+                                <div class="slide-bar-slider__image-ibg">
+                                    <img src="@img/bar-home/bar-slider/04.webp" alt="Картинка-еды">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bar-slider__controll">тут буллеты</div> 
+
+
+                    </div>
+
+                    <nav class="bar-slider__menu menu-bar-slider" data-da=".bar-slider, 1477, 0"> 
+                        <a href="" class="menu-bar-slider__text menu-bar-slider__text_current">#Gericht</a>
+                        <a href="" class="menu-bar-slider__text">#Bar</a>
+                    </nav>
+
+                    <a type="button" class="bar-slider__scroll scroll" data-da=".bar-slider, 1477" href="#2">
+                        Scroll
+                    </a>
+                </div>
+
+            </section> -->
+
+            <section class="book">
+                <div class="book__container">
+                    <div class="book__body">
+                        <div class="book__header block-header">
+                            <div class="block-header__sub-title">Reservations</div>
+                            <h2 class="block-header__title ">Book A Table</h2>
+                        </div>
+                        <form data-dev data-popup-massage="#formMessage" method="POST" action="#" action=""
+                            class="book__form form-book">
+                            <div class="form-book__items">
+                                <div class="form-book__item">
+                                    <select name="form[]" id="" class="form">
+                                        <option value="1" selected>1 Person</option>
+                                        <option value="2">2 Person</option>
+                                        <option value="3">3 Person</option>
+                                        <option value="4">4 Person</option>
+                                        <option value="5">More 4 Person</option>
+                                    </select>
+                                </div>
+                                <div class="form-book__item">
+                                    <div class="form-book__input _icon-select-arrow">
+                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                            data-required placeholder="06/10/2026" data-calendar class="input-dark">
+                                    </div>
+                                </div>
+                                <div class="form-book__item">
+                                    <select name="form[]" id="" class="form">
+                                        <option value="1" selected>11:00 AM</option>
+                                        <option value="2">12:00 AM</option>
+                                        <option value="3">1:00 PM</option>
+                                        <option value="4">2:00 PM</option>
+                                        <option value="5">3:00 PM</option>
+                                        <option value="6">4:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="book__button button">Book now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bar-home__menu-special special-menu">
+                <div class="special-menu__container">
+
+                    <div class="special-menu__header block-header">
+                        <div class="special-menu__sub-title block-header__sub-title">Menu that fits you palatte</div>
+                        <div class="special-menu__title block-header__title">Today’s Special</div>
+                    </div>
+
+                    <div class="special-menu__body">
+                        <div class="special-menu__table table-special">
+
+                            <div class="table-special__title">Wine & Beer</div>
+
+                            <div class="table-special__body">
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Chapel Hill Shiraz</div>
+                                        <div class="table-special__price">$56</div>
+                                    </div>
+                                    <div class="table-special__text">AU | Bottle</div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Catena Malbec</div>
+                                        <div class="table-special__price">$59</div>
+                                    </div>
+                                    <div class="table-special__text">AU | Bottle</div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">La Vieille Rosé</div>
+                                        <div class="table-special__price">$44</div>
+                                    </div>
+                                    <div class="table-special__text">FR | 750 ml</div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Rhino Pale Ale</div>
+                                        <div class="table-special__price">$31</div>
+                                    </div>
+                                    <div class="table-special__text">CA | 750 ml</div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Irish Guinness</div>
+                                        <div class="table-special__price">$26</div>
+                                    </div>
+                                    <div class="table-special__text">IE | 750 ml</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="special-menu__image">
+                            <img src="@img/bar-home/special-menu/1.png" alt="Картинка для специального меню / Бар">
+                        </div>
+
+                        <div class="special-menu__table table-special">
+
+                            <div class="table-special__title">Cocktails</div>
+
+                            <div class="table-special__body">
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Aperol Spritz</div>
+                                        <div class="table-special__price">$20</div>
+                                    </div>
+                                    <div class="table-special__text">Aperol | Villa Marchesi prosecco | soda | 30ml
+                                    </div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Dark 'N' Stormy</div>
+                                        <div class="table-special__price">$16</div>
+                                    </div>
+                                    <div class="table-special__text">Dark rum | Ginger beer | Slice of lime. </div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Daiquiri</div>
+                                        <div class="table-special__price">$10</div>
+                                    </div>
+                                    <div class="table-special__text">Rum | Citrus juice | Sugar</div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Old Fashioned</div>
+                                        <div class="table-special__price">$31</div>
+                                    </div>
+                                    <div class="table-special__text">Bourbon | Brown sugar | Angostura Bitters</div>
+                                </div>
+                                <div class="table-special__item">
+                                    <div class="table-special__header">
+                                        <div class="table-special__name">Negroni</div>
+                                        <div class="table-special__price">$26</div>
+                                    </div>
+                                    <div class="table-special__text">Gin | Sweet Vermouth | Campari | Orange garnish
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="special-menu__button button">View More</button>
+
+                </div>
+            </section>
+
+
+
+
+
+        </bar>
+
+
+
+        @@include('html/_footer.htm',{})
+    </div>
+    <!-- @@include('html/_popup.htm',{}) -->
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
